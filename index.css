@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+}
+.first-element{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    background: #23e9a7;
+    background-size: cover ;
+
+}
+
+.first-element h1{
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);    
+}
+.first-element button{
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background: #ffffff;
+    width: 170px;
+
+}
+.active.first-element{
+    filter: blur(5px) brightness(.7);
+}
+.create-profile-form  h2{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.sign-up-form h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sign-up-form{
+    position: fixed;
+    left: 40%;
+    width: 400px;
+    height: auto;
+    background: #0bef57 ;
+    top: 30%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.create-profile-form {
+    position: fixed;
+    left: 40%;
+    width: 400px;
+    height: auto;
+    background: #0bef57 ;
+    top: 30%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.sign-up-form input{
+    padding: 10px;
+    height: 10px;
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 13px;    
+}
+.create-profile-form  input{
+    padding: 10px;
+    height: 10px;
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 13px;    
+}
+.sign-up-form button{
+    height: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 69%;
+    border-radius: 10px;
+    background:#062006c2 ;
+}
+.create-profile-form  button{
+    height: 30px;
+    cursor: pointer;
+   
+    font-size: 15px;
+    width: 69%;
+    align-items: center;
+    border-radius: 10px;
+    background:#869c86c2 ;
+}
+.active.sign-up-form{
+    visibility: hidden;
+    opacity: 1;
+}
+.active.create-profile-form {
+    visibility: hidden;
+    opacity: 1;
+}
+.sign-up-form p{
+    position: absolute;
+    top: 10px;
+    font-size: 14px;
+    right: 30px;
+    color: #000000;
+    cursor: pointer;
+    transition: op;
+}
+.create-profile-form  p{
+    position: absolute;
+    top: 10px;
+    font-size: 14px;
+    right: 30px;
+    color: #000000;
+    cursor: pointer;
+    transition: op;
+}
+.sign-up-form p:hover{
+    color: #cd0000;
+}
+.create-profile-form  p:hover{
+    color: #cd0000;
+}
+
+button{    
+    padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, .9);
+    color: #000000;
+    overflow: hidden;
+    position: relative;
+}
+button::before{
+    content: "";
+    position: absolute;
+    background: #0bef57;
+    left:var(--xPos);
+    top:var(--yPos);
+    transform: translate(-50%,-50%);
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: width .5s, height .5s;
+}
+button:hover::before{
+    width: 300px;
+    height: 300px;
+}
+button{
+    position: relative;
+    z-index: 1;
+}
